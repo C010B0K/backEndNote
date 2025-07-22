@@ -54,13 +54,6 @@ const maxId = notes.length > 0
     return String(maxId + 1);
 }
 
-// const GeneratedId = () => {
-// const id = `id-${Date.now()}-${Math.random().toString(36).substring(2, 15)}`;
-
-// console.log(id);
-// return String(id);
-// }
-
 app.post('/api/notes', (request, response) => {
     const body = request.body
 
